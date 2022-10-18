@@ -1,0 +1,2 @@
+跟踪远程仓库的分支
+    将本地分支跟踪服务器分支``git branch --set-upstream-to=origin/分支名 分支名``

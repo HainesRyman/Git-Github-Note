@@ -1,0 +1,15 @@
+gitk：
+    Git 内置的图形界面操作工具
+    实现：
+        基于 tcl 脚本语言的 tk 包实现
+    操作：
+        启动 ~~gitk~~
+            Linux 操作系统中，如果启动失败，提示信息为~~/usr/bin/gitk: line 3: exec: wish: not found~~，则说明没有正确安装 tk 、 tcl 包，正确安装即可
+                例如：
+                    ~~sudo pacman -S tk~~
+                    ~~sudo pacman -S tcl~~
+
+Git Extensions
+    第三方的 Git 图形界面操作工具
+    官网：
+        https://github.com/gitextensions/gitextensions

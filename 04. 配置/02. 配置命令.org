@@ -1,0 +1,7 @@
+~~git config~~命令：
+    作用：
+        配置或读取相应的工作环境变量
+    作用域：
+        ~~git config --local ...~~ 只对当前Git仓库有效（--local的优先级高于--global和--system）
+        ~~git config --global ...~~ 对当前用户的所有Git仓库有效
+        ~~git config --system ...~~ 对操作系统的所有用户的所有Git仓库有效

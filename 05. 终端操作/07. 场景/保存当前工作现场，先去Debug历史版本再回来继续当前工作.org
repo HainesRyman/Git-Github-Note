@@ -1,0 +1,19 @@
+保存当前工作现场，先去Debug历史版本再回来继续当前工作
+    当前正在分支WorkBranchName进行当前的开发工作，发现之前发布过的版本存在bug，此时需要停止当前工作，待完成对历史版本的Debug之后再回来继续当前工作
+    查看当前暂存区状态~~git status~~
+    保存当前工作现场，即将当前工作区、暂存区中的内容不需要提交而保存下来~~git stash~~
+    查看当前暂存区状态~~git status~~若见到没有任何状态，说明工作现场已经被成功保存
+    新建临时分支ContemporaryBranchName用于Debug（用完后会删除此分支）~~git checkout -b ContemporaryBranchName~~
+    在临时分支ContemporaryBranchName上完成Debug工作
+    在临时分支ContemporaryBranchName上添加所Debug的文件到暂存区~~git add 所Debug的文件~~
+    在临时分支ContemporaryBranchName上将暂存区的内容提交到仓库区~~git commit -m '提交说明'~~
+    切换回分支main~~git checkout main~~
+    将临时分支ContemporaryBranchName合并到分支main~~git merge --no-ff -m "提交说明" ContemporaryBranchName~~
+        因为临时分支用完后将会被删除，无法通过分支查询历史记录，所以合并临时分支时需要使用参数~~no-ff~~，同时用~~-m~~添加备注信息
+    推送到服务器~~git push~~
+    删除临时分支ContemporaryBranchName~~git branch -d ContemporaryBranchName~~
+    切换回原来的工作分支~~git checkout WorkBranchName~~
+    查看现场列表~~git stash list~~
+    恢复工作现场~~git stash pop~~
+    验证暂存区状态是否原来的工作现场相同~~git status~~
+    在分支WorkBranchName中继续原来的开发工作

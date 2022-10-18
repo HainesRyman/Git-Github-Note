@@ -1,0 +1,2 @@
+配置默认文本编辑器：
+    ~~git config --global core.editor `Editor_Name`~~

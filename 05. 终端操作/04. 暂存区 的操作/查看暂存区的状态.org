@@ -1,0 +1,3 @@
+查看暂存区的状态 ~~git status~~
+git diff `File_Name_1` ... `File_Name_N`
+    以 Unix 通用的 diff 格式显示 暂存区的文件 与 工作区的文件 的变动差异

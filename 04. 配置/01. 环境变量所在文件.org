@@ -1,0 +1,22 @@
+环境变量所在文件：
+    /etc/gitconfig 文件
+        内容：
+            系统中对所有用户都普遍适用的配置
+        对应命令：
+            ~~git config --system~~
+        优先级：
+            最低
+    ~/.gitconfig 文件
+        内容：
+            只适用于该用户的配置
+        对应命令：
+            ~~git config --global~~
+        优先级：
+            中等
+    当前 Git 所管理的项目的工作目录中的 .git/config 文件
+        内容：
+            仅仅针对当前项目有效
+        对应命令：
+            ~~git config --local~~
+        优先级：
+            最高

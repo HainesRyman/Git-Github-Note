@@ -1,0 +1,3 @@
+克隆仓库的命令格式为：
+    ~~git clone `remote_URL`~~ 将远程仓库克隆到本地（使用自带项目名）
+    ~~git clone `remote_URL` `Project_Name`~~ 将远程仓库克隆到本地，并使用自定义项目名

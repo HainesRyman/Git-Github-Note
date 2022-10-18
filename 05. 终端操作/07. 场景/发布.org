@@ -1,0 +1,36 @@
+发布：
+    开发部门每个组员逐个合并自己的工作分支到分支dev
+        这一步是每个人将自己分支上开发的代码，合并到dev分支上，每个人逐个执行1-6步
+        前题：已经完成了自己分支代码的开发并完成添加、提交及推送
+        1.每个组员切换到dev分支~~git checkout dev~~
+        2.获取最新记录代码~~git pull~~
+        3.合并，将自己编写的代码加入进来，如果有冲突则与上一个组员商量解决冲突
+        如果没有冲突则可以跳过4、5步
+        ~~git merge 分支~~
+        4.添加
+        注意：在项目的根级目录下，即README.md所在的目录下~~git add ./~~
+        5.提交~~git commit -m '提交说明'~~
+        6.推送~~git push origin dev~~
+    测试部门测试分支dev
+    项目经理合并dev到main
+        1.切换到dev分支~~git checkout dev~~
+        2.获取最新~~git pull~~
+        3.切换到main分支~~git checkout main~~
+        4.合并dev分支到main分支~~git merge dev~~
+        如果有冲突，则找相应的组同解决冲突
+        如果没有冲突则可以跳过5、6步
+        5.添加
+        注意：在项目的根级目录下，即README.md所在的目录下~~git add ./~~
+        6.提交~~git commit -m '提交说明'~~
+        7.打标签
+        标签就是为了给一堆数字的版本号，起一个容易记住的名字，一般用于main分支~~git tag 标签名称~~例~~git tag v1.0~~
+        8.推送~~git push~~
+    项目经理发布分支main
+    每个组员逐个获取最新的dev分支、main分支
+        现在最新的代码已经有了，接下来在这个版本代码基础上继续开发，每个人都要获取最新的代码
+        1.切换到main分支~~git checkout main~~
+        2.获取~~git pull~~
+        3.切换到dev分支~~git checkout dev~~
+        4.将main分支合并到dev分支~~git merge main~~
+        5.切换到自己工作的分支如zhujiao分支~~git checkout zhujiao~~
+        6.将dev分支合并到工作分支如zhujiao分支~~git merge dev~~

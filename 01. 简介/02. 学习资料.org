@@ -1,0 +1,11 @@
+官方文档：
+    https://git-scm.com/doc
+第三方教程：
+    简明指南 http://rogerdudler.github.io/git-guide/index.zh.html
+    Udacity与GitHub共同制作的免费课程（精品制作） https://cn.udacity.com/course/version-control-with-git--ud123
+    图解 Git https://marklodato.github.io/visual-git-guide/index-zh-cn.html
+    《git-recipes》-童仲毅geeeeeeeeek@github整理翻译的集合教程（全面包含从入门到应用） https://github.com/geeeeeeeeek/git-recipes/blob/master/README.md
+    廖雪峰 https://www.liaoxuefeng.com/wiki/896043488029600
+    《Pro Git》-Scott Chacon、Ben Straub-2版（Git圣经级别） https://git-scm.com/book/en/v2 https://git-scm.com/book/zh/v2 可在线阅读，可下载
+    happypeter1983的视频教程（进阶级，讲到一些高级的用法） http://i.youku.com/i/UMTc0ODYxNDcy?spm=a2h0j.8191423.subscription_wrap.DD~A
+    Git学习游戏 https://learngitbranching.js.org/

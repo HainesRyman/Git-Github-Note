@@ -1,0 +1,9 @@
+* 重命名文件
+| 方法1 - 低效方法           |                                            |
+|                            | ~~cd `Directory_Name`~~                    |
+|                            | ~~mv `Old_File_Name` `New_File_Name`~~     |
+|                            | ~~git rm `Old_File_Name`~~                 |
+|                            | ~~git add `New_File_Name`~~                |
+| 方法1 - Git 提供的快捷方法 |                                            |
+|                            | ~~cd `Directory_Name`~~                    |
+|                            | ~~git mv `Old_File_Name` `New_File_Name`~~ |

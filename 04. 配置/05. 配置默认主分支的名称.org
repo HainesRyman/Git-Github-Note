@@ -1,0 +1,2 @@
+配置默认主分支的名称：
+    ~~git config [ --local | --global | --system ] init.defaultBranch main~~ （原为master现在普遍建议使用main）

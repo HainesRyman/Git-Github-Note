@@ -1,0 +1,4 @@
+~~git remote set-url origin  https://`Github_User_Token`@github.com/`Github_User_Name`/`Repository_Name`.git~~
+    `Github_User_Token` ： Github 用户的 token
+    `Github_User_Name` ： Github 用户的用户名
+    `Github_Repository_Name` ： Github 用户的仓库名

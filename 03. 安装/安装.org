@@ -1,0 +1,15 @@
+* 安装 Git
+Git官方下载地址： https://git-scm.com/download
+Debian 操作系统：
+    ~~sudo apt-get install git~~
+Ubuntu 操作系统：
+    ~~sudo add-apt-repository ppa:git-core/ppa~~
+    ~~sudo apt-get update~~
+    ~~sudo apt-get install~~
+Arch 操作系统：
+    ~~~~
+检验是否安装成功
+    ~~git --version~~
+
+
+

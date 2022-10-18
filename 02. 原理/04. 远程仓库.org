@@ -1,0 +1,61 @@
+* 远程仓库
+实现：
+    建立服务器，每天24小时工作
+    在服务器上建立一个 Git 仓库
+    各个开发者
+        将服务器上的 Git 仓库克隆到自己的计算机上
+        将各自的提交推送到服务器上的 Git 仓库中
+        从服务器上的 Git 仓库中拉取别人的提交
+例如：
+    GitHub
+    GitLab
+    Gitee
+* GitHub
+** 本地计算机的 Git 的 SSH 公钥 绑定/添加到 GitHub 账户
+原理：
+    因为，本地仓库 与 GitHub 远程仓库 的传输是通过 SSH 加密的，所以，在实际交互之前，需要将本地计算机的 Git 的 SSH 公钥 绑定/添加到 GitHub 账户
+操作：
+    01. 生成本地计算机的 Git 的 SSH 密钥：
+        检查是否已有Git 的 SSH 密钥：
+            检查是否存在如下两个文件：
+                ~~~/.ssh/id_rsa~~     文件中的文本为私钥，千万不能泄露给别人
+                ~~~/.ssh/id_rsa.pub~~ 文件中的文本为公钥，可以公开给所有人
+            如果存在，说明已有 Git 的 SSH 密钥， ~~~/.ssh/id_rsa~~ 中的文本为私钥，~~~/.ssh/id_rsa.pub~~ 中的文本为公钥
+                如果想使用此密钥，直接 绑定/添加到 Github 账户即可
+                如果不想使用此密钥，可以执行命令 ~~rm -r ~/.ssh~~ 删除存储旧密钥的 ~~~/.ssh~~ 文件夹
+            如果不存在，则需要生成本地计算机的 Git 的 SSH 密钥
+        执行命令 ~~ssh-keygen -t rsa -C 'Github账号的用户名 或 Github账号的邮箱地址'~~ 生成本地计算机的 Git 的 SSH 密钥
+            提示：
+                ~~`
+                Generating public/private rsa key pair.
+                Enter file in which to save the key (/home/`Local_Computer_User_Name`/.ssh/id_rsa): 
+                ~~`
+            按 ~~<Enter>~~ 使用默认的保存密钥的目录
+            提示：
+                ~~`
+                Created directory '/home/`Local_Computer_User_Name`/.ssh'.
+                Enter passphrase (empty for no passphrase): 
+                ~~`
+            根据个人情况决定填写密码或按 ~~<Enter>~~ 跳过而不填写密码
+                如果填写（一般使用项目的名称作为密码），后续操作时会要求填写此密码
+    02. 将本地计算机的 Git 的 SSH 公钥 绑定/添加到 GitHub 账户
+        打开 GitHub
+            点击 GitHub 账户头像后的下拉三角
+                选择 ~~settings~~
+                    点击 ~~SSH and GPG keys~~
+                        点击 ~~new ssh key~~ 添加 SSH 公钥
+                            填写标题
+                            复制本地计算机的 Git 的 SSH 公钥，粘贴到此处
+                            点击 ~~Add SSH key~~
+        公钥添加成功后即可看到 ~~https://github.com/settings/keys~~ 页面中的公钥列表
+** 生成 Github token
+原理：
+    GitHub从2021年08月13日起不再支持Git客户端使用从前的GitHub账户密码认证，而是要求使用基于token的认证
+    如果是把远程仓库存储在GitHub上，则需要先设置token
+操作：
+    进入 https://github.com/
+        点击 ~~Settings~~
+            点击 ~~Developer settings~~
+                点击 ~~Personal access tokens~~
+                    点击 ~~Tokens (classic)~~
+                        点击 ~~Generate new token~~ 生成 Github token

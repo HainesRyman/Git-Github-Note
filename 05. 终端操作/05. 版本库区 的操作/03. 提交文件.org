@@ -1,0 +1,6 @@
+* 提交文件
+把暂存区的文件提交到仓库区 ~~git commit -m '`Information_for_this_Commit`'~~
+    特别的，空的 commit ``git commit -allow-empty -m '`commit information`'``
+提交跟踪过的文件 ~~git commit -am'`commit information`'~~
+
+查看暂存区未提交的记录``git status``

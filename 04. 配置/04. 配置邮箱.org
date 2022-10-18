@@ -1,0 +1,2 @@
+配置邮箱：
+    ~~git config [ --local | --global | --system ] user.email '`uxer_email`'~~

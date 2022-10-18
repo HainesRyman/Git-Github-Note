@@ -1,0 +1,2 @@
+配置用户名：
+    ~~git config [ --local | --global | --system ] user.name '`user_name`'~~

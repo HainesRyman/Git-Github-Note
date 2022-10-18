@@ -1,0 +1,8 @@
+* 查看配置信息：
+    查看全部配置信息：
+        ~~git config [ --local | --global | --system ] --list~~
+            如果有重复显示的变量，则说明它们来自不同的配置文件， Git 会采用重复的变量中的最后一个
+    查看某个环境变量：
+        ~~git config [ --local | --global | --system ] `Variable_Name`~~
+            例如：
+                ~~git config [ --local | --global | --system ] user.name~~

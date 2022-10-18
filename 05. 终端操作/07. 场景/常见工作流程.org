@@ -1,0 +1,10 @@
+常见工作流程：
+    1. 分支member1的工作完成，使其合并到分支dev
+        1. 切换到分支dev~~git checkout dev~~
+        2. 获取代码，如果dev分支上有更新的记录则会同步到本地（使远程仓库的分支dev同步到本地仓库？？？）~~git pull~~
+        3. 使分支member1合并到分支dev~~git merge zhujiao~~
+        4. 将本地仓库的分支dev推动到远程仓库~~git push origin dev~~
+    2. 开始分支member1的新工作
+        1. 切换到分支member1~~git checkout member1~~
+        2. 在最新代码上继续开发，将分支dev合并到分支member1~~git merge dev~~
+        3. 在分支member1上继续开始新的工作工作

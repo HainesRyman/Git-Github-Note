@@ -1,0 +1,10 @@
+* 创建 Git 仓库
+方法1 - 将已有文件夹设置为Git仓库：
+    ~~cd `Directory_Name`~~ 进入想要将其设置为Git仓库的文件夹的路径
+    ~~git init~~ 将当前文件夹设置为Git仓库
+方法2 - 创建文件夹并将其设置为Git仓库：
+    ~~cd `Directory_Name`~~ 进入想要创建Git仓库的路径
+    ~~git init `[Project_Name]`~~ 通过Git命令创建文件夹并将其设置为Git仓库
+    ~~cd `Project_Name/`~~ 进入Git仓库
+* Git 仓库
+Git 仓库中会有一个 ``.git`` 文件夹，它的功能以后再说

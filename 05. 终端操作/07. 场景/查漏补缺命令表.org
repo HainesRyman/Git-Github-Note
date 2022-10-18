@@ -1,0 +1,4 @@
+查漏补缺命令表：
+    git log
+    git branch --set-upstream-to=origin/分支名称 分支名称
+    git checkout -b 分支名称 origin/分支名称

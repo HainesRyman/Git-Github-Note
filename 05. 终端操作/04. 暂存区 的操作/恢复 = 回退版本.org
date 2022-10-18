@@ -1,0 +1,5 @@
+* 恢复 = 回退版本
+将 工作区的某文件 恢复为 暂存区的版本 或 版本库区的版本：
+    ~~git checkout -- `File_Name`~~ 或 ~~git restore -- `File_Name`~~ （新版本的 Git 推荐使用 ~~git restore~~ 代替 ~~git checkout~~）
+    如果已经添加到暂存区，则恢复到暂存区的版本而
+    如果尚未添加到暂存区，则恢复到版本库区的版本

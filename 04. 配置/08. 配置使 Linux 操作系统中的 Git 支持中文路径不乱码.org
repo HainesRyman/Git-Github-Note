@@ -1,0 +1,9 @@
+配置使 Linux 操作系统中的 Git 支持中文路径不乱码：
+    方法1：
+        执行命令 ~~git config --system core.quotepath false~~
+    方法2：
+        在 /etc/gitconfig 中添加代码：
+            ~~~
+            [core]
+                quotepath = false
+            ~~~

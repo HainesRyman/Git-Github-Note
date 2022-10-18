@@ -1,0 +1,32 @@
+Git：
+    本质：
+        分布式版本控制系统
+    功能：
+        分布式管理文件版本
+    开发者：
+        Linus Torvalds
+    协议：
+        开源、免费
+    官方网站：
+        https://git-scm.com/
+    历史：
+        Linux代码由众多志愿者开发
+        为了管理Linux代码
+        2002年以前，
+            世界各地的志愿者把源代码文件通过diff的方式发给Linus，然后由Linus通过手工方式合并代码
+            Linux拒绝采用当时的版本控制系统，因为Linus认为：
+                免费的版本控制系统性能差
+                商用的版本控制系统与Linux的开源精神不符
+                集中式的版本控制系统不但速度慢，而且必须联网才能使用，包括CVS、SVN等
+        2002年，
+            Linux代码库之大让Linus很难继续通过手工方式管理，社区成员们也对这种方式表达了强烈不满，于是Linus选择了商业的版本控制系统BitKeeper
+            BitKeeper的东家BitMover公司出于人道主义精神，授权Linux社区免费使用这个版本控制系统
+        在2005年，
+            越来越多的人试图破解BitKeeper的协议，开发Samba的Linux社区成员Andrew的破解工作尤为突出
+            BitMover公司发现这件事，于是要收回Linux社区的免费使用权
+            Linus在两周时间内用C语言编写了分布式版本控制系统Git
+            一个月之内，Linux系统的源码已经由Git管理了
+            Git迅速成为最流行的分布式版本控制系统
+        2008年，
+            GitHub网站上线，为开源项目免费提供Git存储
+            无数开源项目开始迁移至GitHub，包括jQuery，PHP，Ruby等等

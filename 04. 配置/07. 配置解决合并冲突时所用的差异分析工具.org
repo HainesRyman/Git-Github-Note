@@ -1,0 +1,3 @@
+配置解决合并冲突时所用的差异分析工具：
+    ~~git config [ --local | --global | --system ] merge.tool `Editor_Name`~~
+        Git 可以理解 kdiff3、tkdiff、meld、xxdiff、emerge、vimdiff、gvimdiff、ecmerge、opendiff 等编辑器的输出信息
